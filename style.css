@@ -1,6 +1,4 @@
 root {
-  --dracula-bg: ;
-  --dracula-fg: 
   --dracula-purple: #bd93f9;
   --dracula-pink: #ff79c6;
   --dracula-cyan: #8be9fd;
@@ -8,13 +6,27 @@ root {
 
 body {
   background-color: #282a36;
-  color: #f8f8f2;;
+  color: #f8f8f2;
 }
 
-.container{
-    margin: 40px;
+.container {
+    max-width: 1024px;
+    margin: 40px auto;
 }
 
-h1 {
-  color:brown;
+.livros {
+  display: block;
+  margin: 40px;
+  max-width: 680px;
+}
+
+.livro {
+  padding: 0 40px;
+}
+
+.livro p {
+  margin-left: 1rem;
+  display:block;
+  padding: 0 30px;
+  text-align: justify;
 }
