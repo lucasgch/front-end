@@ -2,5 +2,5 @@
 
 Repositório com práticas e laboratórios desenvolvidos na disciplina de Programação Front End I do curso de Análise e Desenvolvimento de Sistemas do IFSC - Campus São José - SC.
 
-Docente responsável: Ana Luiza Scharf
+Docente responsável: [Ana Luiza Scharf](https://github.com/analuscharf)
 
