@@ -1,0 +1,20 @@
+root {
+  --dracula-bg: ;
+  --dracula-fg: 
+  --dracula-purple: #bd93f9;
+  --dracula-pink: #ff79c6;
+  --dracula-cyan: #8be9fd;
+}
+
+body {
+  background-color: #282a36;
+  color: #f8f8f2;;
+}
+
+.container{
+    margin: 40px;
+}
+
+h1 {
+  color:brown;
+}
