@@ -4,3 +4,6 @@ Repositório com práticas e laboratórios desenvolvidos na disciplina de Progra
 
 Docente responsável: [Ana Luiza Scharf](https://github.com/analuscharf)
 
+## Índice de atividades realizadas
+
+[FE1 - 2. Introdução ao HTML5](./2026-07-28/)
