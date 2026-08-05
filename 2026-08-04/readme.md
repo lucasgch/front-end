@@ -1,9 +1,9 @@
 # Exercício
 
-1. Continue o projeto da aula anterior utilizando apenas tags semânticas do HTML5.
-2. Utilize corretamente: <header>, <main>, <section>, <article>, <footer>
-3. No cabeçalho: matenha seu nome
-    - Utilize <strong> e <em> no parágrafo com a breve apresentação pessoal
-4. Crie uma seção chamada Universos que me inspiram, contendo:
-    - Uma lista ordenada <ol> com seus universos favoritos
-    - uma lista não ordenada <ul> com músicas relacionadas a esse universo que você gosta
+1. Clone o repositório do projeto.
+2. Crie um diretório chamado img/ e, dentro dele, um diretório chamado icones/.
+3. Associe ícones visuais aos universos criativos do projeto (filmes, livros, música). (Ex. `https://www.flaticon.com`)
+4. Os ícones devem aparecer ao lado do nome de cada universo.
+5. Transforme: nomes de filmes, séries ou livros em links informativos.
+6. Insira no rodapé as referências das imagens utilizadas.
+7. Valide o documento HTML
