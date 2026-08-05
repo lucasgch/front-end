@@ -1,4 +1,4 @@
-# Exercício
+# Exercício 1
 
 1. Continue o projeto da aula anterior utilizando apenas tags semânticas do HTML5.
 2. Utilize corretamente: <header>, <main>, <section>, <article>, <footer>

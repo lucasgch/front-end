@@ -249,3 +249,34 @@ a:hover {
   color: var(--dracula-pink);
   text-decoration: underline;
 }
+
+footer{
+  line-height: 1rem;
+  text-align: center;
+  font-size: smaller;
+
+  h5{
+    font-size: small;
+    margin-bottom: 15px;
+  }
+
+  ul{
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  ul > li {
+    font-weight: bold;
+  }
+  li{
+    margin-top: 3px;
+  }
+
+  a {
+    color: lightgray;
+  }
+
+  #copyright{
+    margin-top: 10px;
+    color: darkgrey;
+  }
+}

@@ -10,3 +10,5 @@ Docente responsável: [Ana Luiza Scharf](https://github.com/analuscharf)
 ## Índice de atividades realizadas
 
 [FE1 - 2. Introdução ao HTML5](./2026-07-28/)
+[Exercício de HTML semântico](./2026-07-31/)
+[Exercício de HTML 2](./2026-07-31/)
