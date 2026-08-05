@@ -191,10 +191,20 @@ section {
 
 /* Seção de Músicas */
 .musicas-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
   .header-section {
     padding: 30px;
   }
+
+  .header-section{
+      background-color: #0f1018;
+      border-radius: 14px;
+  }
+
 }
+
 
 .subtitle {
   font-size: 1rem;
@@ -204,22 +214,27 @@ section {
 
 .musicas-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr;
   padding: 0;
+  background-color: #0f1018;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+  scrollbar-color: #c0c0c0 #000000; /* For Firefox */
 }
 
 .musicas-list li {
-  background-color: var(--bg-light);
-  padding: 18px;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  transition: background-color 0.3s ease;
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  
 }
 
 .musicas-list li:hover {
-  background-color: var(--bg-medium);
+  background-color: var(--bg-light);
 }
 
 /* Links */
