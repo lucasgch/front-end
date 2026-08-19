@@ -1,0 +1,328 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* CSS Variables */
+:root {
+  --dracula-purple: #bd93f9;
+  --dracula-pink: #ff79c6;
+  --dracula-cyan: #8be9fd;
+  --bg-dark: #282a36;
+  --bg-medium: #202335;
+  --bg-light: #44475a;
+  --text-primary: #f8f8f2;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: .9rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  margin: 0 40px 40px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 50px;
+}
+
+.header-section {
+  margin-bottom: 30px;
+}
+
+.header-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.imgsection {
+  max-width: 50px;
+  height: auto;
+}
+
+.nav-section {
+  background-color: var(--bg-medium);
+  padding: 0px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.nav-section h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: var(--dracula-pink);
+}
+
+.nav-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-section li {
+  padding: 0px 0;
+}
+
+/* Section Cards - Estilos compartilhados */
+.section-card {
+  background-color: var(--bg-medium);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+/* Seção dos Livros */
+.livros-section {
+  .header-section{
+    margin: 10px 20px;
+  }
+}
+
+/* Grid de Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.card-livro {
+  padding: 40px 16px;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-livro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card-img-container img {
+  height: 100%;
+  object-fit: cover;
+  margin: 0px auto;
+  border-radius: 14px;
+}
+
+.card-conteudo {
+  padding: 20px;
+}
+
+.card-conteudo h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.card-conteudo p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+.series-list {
+  background-color: var(--bg-medium);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.series-list h4 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: var(--dracula-cyan);
+}
+
+.series-list ol {
+  padding-left: 20px;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+/* Seção de Músicas */
+.musicas-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  .header-section {
+    padding: 30px;
+  }
+
+  .header-section{
+      background-color: #0f1018;
+      border-radius: 14px;
+  }
+
+}
+
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--dracula-cyan);
+  margin-top: 15px;
+}
+
+.musicas-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  background-color: #0f1018;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+  scrollbar-color: #c0c0c0 #000000; /* For Firefox */
+}
+
+.musicas-list li {
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.musicas-list li:hover {
+  background-color: var(--bg-light);
+}
+
+/* Links */
+a {
+  color: var(--dracula-cyan);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--dracula-pink);
+  text-decoration: underline;
+}
+
+footer{
+  line-height: 1rem;
+  text-align: center;
+  font-size: smaller;
+
+  h5{
+    font-size: small;
+    margin-bottom: 15px;
+  }
+
+  ul{
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  ul > li {
+    font-weight: bold;
+  }
+  li{
+    margin-top: 3px;
+  }
+
+  a {
+    color: lightgray;
+  }
+
+  #copyright{
+    margin-top: 10px;
+    color: darkgrey;
+  }
+}
+
+/* Tables */
+section.horarios{
+align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom:20px;
+}
+table {
+  border:1px solid var(--bg-light);
+  background-color: var(--bg-medium);
+  th, td {
+    padding: 10px;
+    border: 1px solid var(--bg-light);
+  }
+}
+
+/* Audio Controls */
+audio {
+  height: 1rem;
+  margin: 5px;
+}
+
+form{
+  border: 1px solid var(--bg-light);
+  padding: 20px;
+  h2{
+    margin-bottom: 15px;
+  }
+  label{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  input{
+    padding:3px;
+  }
+  
+}
+
+
+
+input[type="range"] {
+  accent-color: #ff4500; /* Changes the slider knob color */
+}
