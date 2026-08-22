@@ -57,6 +57,7 @@ header h1 {
 header p {
   font-size: 0.95rem;
   text-align: left;
+  margin-bottom: .5rem;
 }
 
 /* Section Styles */
@@ -124,6 +125,10 @@ section {
 .livros-section,
 .header-section {
   margin: 10px 20px;
+}
+
+.livros-section h3{
+  margin-bottom: 1rem;
 }
 
 /* Grid de Cards */
