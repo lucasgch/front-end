@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Lucas Godoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de Leituras</h1>
+        </header>
+        <main>
+            <section class="form-section">
+                <form action="exemplo.php" method="POST">
+                    <h2>Dados do livro</h2>
+                    <label for="book_title">Título: </label> <input type="text" name="book_title" size="60" id="book_title" 
+                        required placeholder="Informe o título do livro">
+                    <label for="author">Autor: </label> <input type="text" name="book_author" size="60"
+                        id="author" placeholder="Autor(a)">
+                    <label for="year">Ano de publicação: </label> <input type="text" name="book_year" size="10" id="year"
+                        placeholder="Ano de publicação">
+                    <label for="isbn">ISBN: </label> <input type="text" name="book_isbn" size="20" id="isbn"
+                        placeholder="ISBN">
+                    <label for="pages">Total de páginas: </label> <input type="text" name="book_pages" size="10"
+                        id="pages" placeholder="Número de páginas">
+                    <label for="current_page">Página atual: </label> <input type="text" name="book_current_page"
+                        size="10" id="current_page" placeholder="Página atual">
+                    <label for="status">Status: </label>
+                    Lido <input type="radio" name="status" value="lido" id="status" checked>
+                    Lendo <input type="radio" name="status" value="lendo">
+                    Não iniciado <input type="radio" name="status" value="nao_iniciado">
+                    <label for="genre">Gênero: </label>
+                    <select name="book_genre" id="genre">
+                        <option value="ficcao científica">Ficção</option>
+                        <option value="nao-ficcao">Não Ficção</option>
+                        <option value="romance">Romance</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="fantasia">Fantasia</option>
+                        <option value="biografia">Biografia</option>
+                    </select>
+                        <label for="review">Notas da leitura: </label>
+                        <textarea name="book_review" id="review" cols="60" rows="10"></textarea>
+                    <label for="rating">Avaliação: </label>
+                        <input type="range" name="book_rating" id="rating" min="0" max="10" step="1">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Formulário de Lucas Godoy. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
