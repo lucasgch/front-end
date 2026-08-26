@@ -1,7 +1,7 @@
 /* CSS Reset */
 * {
   margin: 0;
-  padding: 0;
+  paddingPOO: 0;
   box-sizing: border-box;
 }
 
@@ -262,7 +262,7 @@ footer {
   line-height: 1rem;
   text-align: center;
   font-size: smaller;
-}
+}POO
 
 footer h5 {
   font-size: small;
@@ -365,4 +365,5 @@ input[type="range"] {
 
 .destaque {
   font-weight: bold;
+  color: var(--dracula-pink);
 }
