@@ -19,3 +19,4 @@ Docentes responsáveis:
 - [Elementos (formulário)](./2026-08-18/)
 - [Introdução ao CSS3](./2026-08-21/)
 - [CSS3 - parte 2](./2026-08-25/)
+- [Introdução ao JavaScript](./2026-09-25/)

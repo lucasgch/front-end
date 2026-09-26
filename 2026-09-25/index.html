@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript - Front End 1 (IFSC)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <span class="badge">Front End 1 • IFSC Campus São José</span>
+            <h1>Introdução ao JavaScript</h1>
+            <p class="subtitle">Resolução dos 13 exercícios em JavaScript nativo para navegador.</p>
+            <div class="tip-box">
+                💡 <strong>Dica:</strong> Abra o console do navegador com <code>F12</code> ou <code>Ctrl + Shift + I</code> para visualizar todos os resultados dos <code>console.log()</code> gerados pelo <code>script.js</code>.
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="grid-exercicios">
+            <!-- Exercício 1 -->
+            <article class="card">
+                <span class="card-num">Ex 01</span>
+                <h3>Soma de Elementos</h3>
+                <p>Calcula a soma de todos os números do array.</p>
+                <div class="card-demo">
+                    <code>sum([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(1)">Executar Teste</button>
+                <div class="resultado" id="res-1">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 2 -->
+            <article class="card">
+                <span class="card-num">Ex 02</span>
+                <h3>Média dos Elementos</h3>
+                <p>Calcula a média aritmética dos valores do array.</p>
+                <div class="card-demo">
+                    <code>med([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(2)">Executar Teste</button>
+                <div class="resultado" id="res-2">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 3 -->
+            <article class="card">
+                <span class="card-num">Ex 03</span>
+                <h3>Menor Elemento</h3>
+                <p>Encontra o menor elemento presente no array.</p>
+                <div class="card-demo">
+                    <code>menor([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(3)">Executar Teste</button>
+                <div class="resultado" id="res-3">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 4 -->
+            <article class="card">
+                <span class="card-num">Ex 04</span>
+                <h3>Medalha de Prata</h3>
+                <p>Retorna o segundo maior elemento do array.</p>
+                <div class="card-demo">
+                    <code>segundoMaior([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(4)">Executar Teste</button>
+                <div class="resultado" id="res-4">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 5 -->
+            <article class="card">
+                <span class="card-num">Ex 05</span>
+                <h3>Filtro de Ímpares</h3>
+                <p>Retorna um novo array contendo somente números ímpares.</p>
+                <div class="card-demo">
+                    <code>filtrarImpares([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(5)">Executar Teste</button>
+                <div class="resultado" id="res-5">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 6 -->
+            <article class="card">
+                <span class="card-num">Ex 06</span>
+                <h3>Inverter Array</h3>
+                <p>Retorna um novo array com os elementos em ordem inversa.</p>
+                <div class="card-demo">
+                    <code>inverterArray([1, 2, 3, 4, 5, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(6)">Executar Teste</button>
+                <div class="resultado" id="res-6">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 7 -->
+            <article class="card">
+                <span class="card-num">Ex 07</span>
+                <h3>Histograma (5 bandas)</h3>
+                <p>Exibe o histograma dividido em 5 faixas de 1 a 100.</p>
+                <div class="card-demo">
+                    <code>histograma([32, 5, 63, 68, 89, 10, ...])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(7)">Executar Teste</button>
+                <pre class="resultado pre-resultado" id="res-7">Resultado: aguardando...</pre>
+            </article>
+
+            <!-- Exercício 8 -->
+            <article class="card">
+                <span class="card-num">Ex 08</span>
+                <h3>Verificador de Aluno (prompt)</h3>
+                <p>Utiliza a caixa de <code>prompt()</code> nativa do navegador para buscar um aluno.</p>
+                <div class="card-demo">
+                    <code>verificarAluno(alunosPadrao)</code>
+                </div>
+                <button class="btn btn-accent" onclick="testarExercicio(8)">Abrir prompt() e Testar</button>
+                <div class="resultado" id="res-8">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 9 -->
+            <article class="card">
+                <span class="card-num">Ex 09</span>
+                <h3>Comparador de Arrays</h3>
+                <p>Verifica se dois arrays possuem os mesmos itens na mesma ordem.</p>
+                <div class="card-demo">
+                    <code>compararArrays([1, 2, 3], [1, 2, 3])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(9)">Executar Teste</button>
+                <div class="resultado" id="res-9">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 10 -->
+            <article class="card">
+                <span class="card-num">Ex 10</span>
+                <h3>Removedor por Índice</h3>
+                <p>Remove o elemento em uma determinada posição do array.</p>
+                <div class="card-demo">
+                    <code>removerElemento(['A', 'B', 'C', 'D'], 1)</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(10)">Executar Teste</button>
+                <div class="resultado" id="res-10">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 11 -->
+            <article class="card">
+                <span class="card-num">Ex 11</span>
+                <h3>Verificador de Palíndromo</h3>
+                <p>Identifica se uma string ou array de caracteres é um palíndromo.</p>
+                <div class="card-demo">
+                    <code>isPalindromo("arara")</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(11)">Executar Teste</button>
+                <div class="resultado" id="res-11">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 12 -->
+            <article class="card">
+                <span class="card-num">Ex 12</span>
+                <h3>Intercalador de Arrays</h3>
+                <p>Mescla dois arrays alternando os elementos entre eles.</p>
+                <div class="card-demo">
+                    <code>intercalarArrays([1, 2, 3], ['a', 'b', 'c'])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(12)">Executar Teste</button>
+                <div class="resultado" id="res-12">Resultado: aguardando...</div>
+            </article>
+
+            <!-- Exercício 13 -->
+            <article class="card">
+                <span class="card-num">Ex 13</span>
+                <h3>Compactador</h3>
+                <p>Substitui sequências consecutivas repetidas por apenas uma ocorrência.</p>
+                <div class="card-demo">
+                    <code>compactarArray(['a','a','b','b','b','c','a','a'])</code>
+                </div>
+                <button class="btn" onclick="testarExercicio(13)">Executar Teste</button>
+                <div class="resultado" id="res-13">Resultado: aguardando...</div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Projeto de Front End 1 &bull; JavaScript puro (Vanilla JS) executado 100% no navegador.</p>
+    </footer>
+
+    <!-- Importação do arquivo de script com as funções puras em JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        // Funções auxiliares para interagir com a interface HTML
+        function testarExercicio(numero) {
+            const el = document.getElementById(`res-${numero}`);
+            switch (numero) {
+                case 1:
+                    el.textContent = "Soma: " + sum(numsPadrao);
+                    break;
+                case 2:
+                    el.textContent = "Média: " + med(numsPadrao).toFixed(2);
+                    break;
+                case 3:
+                    el.textContent = "Menor elemento: " + menor(numsPadrao);
+                    break;
+                case 4:
+                    el.textContent = "Segundo maior: " + segundoMaior(numsPadrao);
+                    break;
+                case 5:
+                    el.textContent = "Ímpares: [" + filtrarImpares(numsPadrao).slice(0, 8).join(", ") + "...]";
+                    break;
+                case 6:
+                    el.textContent = "Invertido: [" + inverterArray(numsPadrao).slice(0, 8).join(", ") + "...]";
+                    break;
+                case 7:
+                    const histResultado = histograma([32, 5, 63, 68, 89, 10, 42, 12, 16, 22, 72, 97]);
+                    el.textContent = histResultado;
+                    break;
+                case 8:
+                    const encontrado = verificarAluno(alunosPadrao);
+                    el.textContent = "Aluno encontrado na lista? " + (encontrado ? "SIM ✅" : "NÃO ❌");
+                    break;
+                case 9:
+                    const testeIgual = compararArrays([1, 2, 3], [1, 2, 3]);
+                    const testeDif = compararArrays([1, 2, 3], [1, 5, 3]);
+                    el.textContent = `[1,2,3] vs [1,2,3]: ${testeIgual} | [1,2,3] vs [1,5,3]: ${testeDif}`;
+                    break;
+                case 10:
+                    const arrayBase = ['A', 'B', 'C', 'D'];
+                    const removido = removerElemento(arrayBase, 1);
+                    el.textContent = "Array original: ['A', 'B', 'C', 'D'] → Sem índice 1: [" + removido.map(x => `'${x}'`).join(", ") + "]";
+                    break;
+                case 11:
+                    el.textContent = `'arara': ${isPalindromo('arara')} | 'javascript': ${isPalindromo('javascript')}`;
+                    break;
+                case 12:
+                    const inter = intercalarArrays([1, 2, 3], ['a', 'b', 'c']);
+                    el.textContent = "Resultado: [" + inter.map(x => typeof x === 'string' ? `'${x}'` : x).join(", ") + "]";
+                    break;
+                case 13:
+                    const compactado = compactarArray(['a', 'a', 'b', 'b', 'b', 'c', 'a', 'a']);
+                    el.textContent = "Resultado: [" + compactado.map(x => `'${x}'`).join(", ") + "]";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
